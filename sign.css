@@ -1,0 +1,21 @@
+body{
+
+    background-size: cover;
+}
+
+
+.contain{
+
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    
+}
+.sig{
+
+
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 1cm;
+    
+}

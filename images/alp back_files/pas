@@ -1,0 +1,62 @@
+jsonp_callback_1({
+    "id": "1d9488e1-76e1-4d4c-b0a5-8143b92c6b63_desktop_popunder_default_checkbox",
+    "redirectBaseID": "1d9488e1-76e1-4d4c-b0a5-8143b92c6b63_desktop_popunder_redirect_base",
+    "redirectBase": "https://www.clicktripz.com/",
+    "userSearchHistory": [
+        {
+            "timestamp": 1605281960
+        }
+    ],
+    "isPseudoPopUnderRedirecting": false,
+    "isEdgeBroken": false,
+    "serverTimestamp": 1605282029,
+    "searchKey": "323248eccde694b421937afa3208fee1",
+    "recommendedDisplayMode": "tabbed",
+    "auctionType": 100,
+    "providers": [
+        {
+            "name": "Booking.com",
+            "smallThumb": "https://images.clicktripz.com/8_15517266691743.png",
+            "mediumThumb": "https://images.clicktripz.com/8_15348699892384.png",
+            "smallAltThumb": "https://images.clicktripz.com/8_15357438671587.png",
+            "checked": true,
+            "hidden": false,
+            "id": "1d9488e1-76e1-4d4c-b0a5-8143b92c6b63_desktop_popunder_provider_1",
+            "redirectID": "6000215071",
+            "windowName": "ct_window_16687",
+            "campaignID": "1d9488e1-76e1-4d4c-b0a5-8143b92c6b63_desktop_popunder_provider_1_16687",
+            "campaign": "16687",
+            "campaignType": "1",
+            "ifb": false
+        },
+        {
+            "name": "trivago",
+            "smallThumb": "https://images.clicktripz.com/156_15517253392846.png",
+            "mediumThumb": "https://images.clicktripz.com/156_15347988856838.png",
+            "smallAltThumb": "https://images.clicktripz.com/156_15258946685559.png",
+            "checked": true,
+            "hidden": false,
+            "id": "1d9488e1-76e1-4d4c-b0a5-8143b92c6b63_desktop_popunder_provider_2",
+            "redirectID": "2030917091",
+            "windowName": "ct_window_17454",
+            "campaignID": "1d9488e1-76e1-4d4c-b0a5-8143b92c6b63_desktop_popunder_provider_2_17454",
+            "campaign": "17454",
+            "campaignType": "1",
+            "ifb": false
+        }
+    ],
+    "strategy": {
+        "publisherId": 3167,
+        "auction_id": "a860eefa-a8dc-455d-bbc7-fd4a9cb4312c",
+        "creative_strategy_id": 10,
+        "search_display_type": 1,
+        "searchParams": {
+            "type": 1,
+            "city": "Alleppey, Kerala, India",
+            "checkInDate": "11/20/2020",
+            "checkOutDate": "11/22/2020",
+            "guests": 1,
+            "rooms": 1
+        }
+    }
+})

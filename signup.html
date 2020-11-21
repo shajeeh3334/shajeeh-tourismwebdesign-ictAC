@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="sign.css">
+</head>
+<body>
+    <body background="images/1.jpg">
+
+    <nav class="navbar navbar-expand-lg navbar-light badge-warning">
+        <a class="navbar-brand" href="#">Kerala Tourism</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signup.html">Sign Up</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="dist.html">District</a>
+              </li>
+            
+            <!-- <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+            <!-- </li> -->
+          </ul>
+        </div>
+      </nav>
+      <div class="sig">
+    <form class="contain">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" required>
+          </div>
+        </n>
+          <div class="form-group col-md-6">
+            <!-- <label for="inputPassword4">Password</label>
+            <input type="password" class="form-control" id="inputPassword4"> -->
+            <style>
+              #frmCheckPassword {
+             
+                  background: #ffffff;
+                  /* padding: 10px; */
+                  
+              }
+    
+              .demoInputBox {
+                  padding: 7px;
+                  border: #f0f0f0 1px solid;
+                  border-radius: 4px;
+                  padding-right: 3.5cm;
+              }
+    
+              #password-strength-status {
+                  padding: 5px 10px;
+                  color: #FFFFFF;
+                  border-radius: 4px;
+                  margin-top: 5px;
+              }
+    
+              .medium-password {
+                  background-color: #b7d60a;
+                  border: #BBB418 1px solid;
+              }
+    
+              .weak-password {
+                  background-color: #ce1d14;
+                  border: #AA4502 1px solid;
+              }
+    
+              .strong-password {
+                  background-color: #12CC1A;
+                  border: #0FA015 1px solid;
+              }
+          </style>
+      </head>
+      <label>Password</label>
+      <div name="frmCheckPassword" id="frmCheckPassword">
+          
+          <input type="password" name="password" id="password" class="demoInputBox" onKeyUp="checkPasswordStrength();" required/>
+          <div id="password-strength-status"></div>
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script>
+          function checkPasswordStrength() {
+              var number = /([0-9])/;
+              var alphabets = /([a-zA-Z])/;
+              var special_characters = /([~,!,@,#,$,%,^,&,*,-,_,+,=,?,>,<])/;
+              if ($('#password').val().length < 6) {
+                  $('#password-strength-status').removeClass();
+                  $('#password-strength-status').addClass('weak-password');
+                  $('#password-strength-status').html("Weak (should be atleast 6 characters.)");
+              } else {
+                  if ($('#password').val().match(number) && $('#password').val().match(alphabets) && $('#password').val().match(special_characters)) {
+                      $('#password-strength-status').removeClass();
+                      $('#password-strength-status').addClass('strong-password');
+                      $('#password-strength-status').html("Strong");
+                  } else {
+                      $('#password-strength-status').removeClass();
+                      $('#password-strength-status').addClass('medium-password');
+                      $('#password-strength-status').html("Medium (should include alphabets, numbers and special characters.)");
+                  }
+              }
+          }
+        </script>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="inputAddress">Phone Number</label>
+          <input type="tel" class="form-control" id="inputAddress" placeholder="10 digits"  pattern="^\d{3}-\d{3}-\d{4}$ |\d{3} \d{3}\d{4}$ |\d{3}.\d{3}.\d{4}$" required>
+        </div>
+
+
+        <div class="form-group">
+          <label for="inputAddress">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">State</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" onclick="ValidateEmail(Email)" >Sign in</button>
+      </form>
+      </div>
+      <script src="va.js"></script>
+    
+</body>
+</html>
